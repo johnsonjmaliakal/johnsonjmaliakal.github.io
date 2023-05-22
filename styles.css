@@ -1,0 +1,9 @@
+.first-media-query{
+    color: red;
+}    
+
+@media screen and (max-width: 768px) {
+    .first-media-query{
+        color: blue;
+    }    
+}

@@ -1,0 +1,653 @@
+/* general /////////////////////////////////////////////////////*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #d1dbe4;
+}
+
+header{
+    top: 0%;
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap ;
+    padding: 5px 0;
+    background-color: #194a7a;
+    position: sticky;
+    margin-bottom: 1%;
+}
+
+header > a {
+    width: 10%;
+}
+
+header > a img {
+    width: 100%;
+    border-radius: 1em;
+    transition: background-color 0.5s;
+}
+
+header > a img:hover {
+    background-color: #d1dbe4;
+}
+
+header h1{
+    width: 86%;
+    margin: 2%;
+    text-align: center;
+    font-size: 100%;
+}
+
+nav{
+    width: 96%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap ;
+    padding: 5px 2%;
+    background-color: #476f95;
+    position: sticky;
+}
+
+nav ul{
+    flex: 1;
+    text-align: justify;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1% 2%;
+    width: 100%;
+}
+nav ul li a{
+    color: #d1dbe4;
+    text-decoration: none;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 7px 8px;
+    font-size: 80%;
+}
+
+footer {
+    bottom: 0%;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap ;
+    padding: 5px 0;
+    background-color: #194a7a;
+    border-color: black;
+    border-style: solid;
+    position: static;
+    margin-bottom: 1%;
+}
+
+footer div{
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    width: 100%;
+    text-align: center;
+}
+
+footer div .footer_upper {
+    text-align: center;
+}
+
+footer span {
+    padding: 0.5% 1%;
+}
+
+/* INDEX PAGE //////////////////////////////////////////////////*/
+
+.index_body{
+    background-color: #194a7a;
+}
+.index_boxes{
+    display: grid;
+	grid-template-areas: 
+    100% 
+    100%
+    100%;
+    grid-row-end: auto;
+	grid-gap: 5em;
+    place-items: center;
+}
+.index_bigImg{
+    width: 100%;
+}
+.index_div{
+    display:flex;
+    flex-wrap: wrap;
+    width:90%;
+    background-color: black;
+    padding: 1rem;
+    min-height: 70%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+.index_image{
+    width: 80%;
+    object-fit: contain;
+}
+.index_text{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: black;
+}
+
+/* BEHAVIOR PAGE ///////////////////////////////////////////////*/
+
+.behavior_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.behavior_txt {
+    padding: 0 20px 0 20px;
+    background-color: #194a7a;
+    margin: 20px;
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.behavior_shark {
+    width: 100%;
+}
+
+.behavior_video {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    padding-top: 62.5%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ANATOMY PAGE ////////////////////////////////////////////////*/
+#anatomy_h2{
+    color: #194a7a;
+    text-align: center;
+}
+#anatomy_caption{
+    font-style: italic;
+    font-size: small;
+}
+.anatomy_div{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    background-color: black;
+    min-height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+#anatomy_pic{
+    width:100%;
+}
+p {
+    padding: 2%;
+    font-size: larger;
+}
+/* SPECIES PAGE ////////////////////////////////////////////////*/
+
+.species_holder{ /* Boxes */
+	display: grid;
+	grid-template-areas: 
+    100% 
+    100%
+    100%;
+    grid-row-end: auto;
+	grid-gap: 5em;
+    place-items: center;
+}
+.species_image{
+    width: 80%;
+    object-fit: contain;
+}
+
+img.species_image {
+    padding-top: 1em;
+}
+.sss{ /* Div */
+    display:flex;
+    flex-wrap: wrap;
+    width:90%;
+    /* max-width: 100%; */
+    background-color: #d1dbe4;
+    /* padding: 0; */
+    min-height: max-content;
+    justify-content: center;
+    border-radius: 1em;
+    color:#194a7a;
+}
+.ddd{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* width: 30em; */
+}
+
+p.ddd {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+
+/* REFERENCES PAGE /////////////////////////////////////////////*/
+
+.references_main {
+    width: 96%;
+    background-color: #476f95;
+    margin: 1% 2%;
+}
+
+.references_heading {
+    padding: 2% 4%;
+    color: #194a7a;
+    background-color: #d1dbe4;
+}
+
+.references_ul li {
+    list-style: none;
+    margin-bottom: 1%;
+    font-size: small;
+}
+
+.references_ul a {
+    color: #a3b7ca;
+}
+
+.references_ul a:visited {
+    color: #a3b7ca;
+}
+
+
+
+@media screen and (min-width: 768px) { /*tablet*/
+    /* general /////////////////////////////////////////////////////*/
+
+    header{
+        top: 0%;
+        display: flex;
+        z-index: 2;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap ;
+        padding: 5px 0;
+        background-color: #194a7a;
+        position: sticky;
+        margin-bottom: 1%;
+    }
+
+    header > a {
+        width: 10%;
+    }
+
+    header > a img {
+        width: 100%;
+    }
+
+    header h1{
+        width: 16%;
+        margin: 2%;
+        text-align: center;
+        font-size: 100%;
+    }
+
+    nav{
+        width: 66%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap ;
+        padding: 5px 2px;
+        background-color: #476f95;
+        position: sticky;
+    }
+
+    nav ul{
+        flex: 1;
+        text-align: justify;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 1% 2%;
+        width: auto;
+    }
+    nav ul li a{
+        color: #d1dbe4;
+        text-decoration: none;
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 7px 8px;
+        font-size: 100%;
+
+    }
+    nav ul li a:hover{
+        background-color: #a3b7ca;
+        color: #194a7a;
+    }
+
+    /* INDEX PAGE //////////////////////////////////////////////////*/
+
+    .index_boxes{
+        display: grid;
+        grid-template-areas: "one  two  three";
+        grid-gap: 2.5em;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        translate: 0 -30%;
+    }
+    .one {grid-area: one;}
+    .two{grid-area: two;}
+    .three{grid-area: three;}
+    .index_div{
+        display:flex;
+        flex-wrap: wrap;
+        width:15em;
+        height:30em;
+        background-color: black;
+        padding: 1rem;
+    }
+    .index_image{
+        width: 100%;
+        object-fit: contain;
+    }
+    .index_text{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5%
+    }
+
+    /* BEHAVIOR PAGE ///////////////////////////////////////////////*/
+
+    .behavior_video {
+        position: relative;
+        overflow: visible;
+        width: auto;
+        padding-top: 0;
+    }
+    
+    iframe {
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        right: auto;
+        width: 600px;
+        height: 300px;
+    }
+
+    /* ANATOMY PAGE ////////////////////////////////////////////////*/
+
+    /* SPECIES PAGE ////////////////////////////////////////////////*/
+
+    .one {grid-area: one;}
+    .two{grid-area: two;}
+    .three{grid-area: three;}
+	.species_holder{
+        display: grid;
+        grid-template-areas:
+               "one two three";
+        grid-gap: 0.25em;
+ }
+    .sss{
+        display:flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height:35em;
+        padding: 1rem;
+        align-content: flex-start;
+        max-width: 30em;
+    }
+	.species_image{
+        width: 100%;
+        padding-top:  0;
+        object-fit: contain;
+ }
+    .sharks_h2, .ddd{
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 0%
+    }
+    .sharks_div{
+        display:flex;
+        flex-wrap:wrap;
+        height:10em;
+        width:100%;
+    }
+
+    /* REFERENCES PAGE /////////////////////////////////////////////*/
+
+    .references_main {
+        width: 96%;
+        background-color: #476f95;
+        margin: 1% 2%;
+    }
+
+    .references_heading {
+        padding: 2% 4%;
+        color: #194a7a;
+        background-color: #d1dbe4;
+    }
+
+    .references_ul li {
+        list-style: none;
+        margin-bottom: 1%;
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 1440px) { /*desktop*/
+    
+    /* general /////////////////////////////////////////////////////*/
+    
+    header{
+        top: 0%;
+        display: flex;
+        z-index: 2;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap ;
+        padding: 5px 0;
+        background-color: #194a7a;
+        position: sticky;
+        margin-bottom: 1%;
+    }
+
+    header > a {
+        width: 10%;
+    }
+    
+    header > a img {
+        width: 100%;
+    }
+
+    header h1{
+        width: 16%;
+        margin: 2%;
+        text-align: center;
+        font-size: 200%;
+    }
+
+    nav{
+        width: 66%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap ;
+        padding: 5px 2px;
+        background-color: #476f95;
+        position: sticky;
+    }
+
+    nav ul{
+        flex: 1;
+        text-align: justify;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 1% 2%;
+        width: auto;
+}
+    nav ul li a{
+        color: #d1dbe4;
+        text-decoration: none;
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 100%;
+        transition: background-color 0.5s, color 0.5s;
+    }
+    nav ul li a:hover{
+        background-color: #a3b7ca;
+        color: #194a7a;
+    }
+
+    /* INDEX PAGE //////////////////////////////////////////////////*/
+
+    .index_boxes{
+        display: grid;
+        grid-template-areas: "one  two  three";
+        grid-gap: 2.5em;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        translate: 0 -30%;
+    }
+    .one {grid-area: one;}
+    .two{grid-area: two;}
+    .three{grid-area: three;}
+    .index_div{
+        display:flex;
+        flex-wrap: wrap;
+        width:25em;
+        height:30em;
+        background-color: black;
+        padding: 1rem;
+    }
+    .index_image{
+        width: 100%;
+        object-fit: contain;
+    }
+    .index_text{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5%
+    }
+
+    /* BEHAVIOR PAGE ///////////////////////////////////////////////*/
+
+    .behavior_container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .behavior_txt {
+        display: flex;
+        width: 45%;
+        margin: 0 20px 0 20px;
+        justify-content: flex-end;
+    }
+
+    .behavior_img {
+        width: 100%;
+        display: flex;
+        margin: 0;
+    }
+
+    .behavior_video {
+        width: 45%;
+        margin: 20px 0 20px 0;
+    }
+
+
+    /* ANATOMY PAGE ////////////////////////////////////////////////*/
+
+    /* SPECIES PAGE ////////////////////////////////////////////////*/
+    .species_holder{
+        display: grid;
+        grid-template-areas: "one  two  three";
+        grid-gap: 2.5em;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+	}
+    .sss{
+        display:flex;
+        flex-wrap: wrap;
+        width:25em;
+        min-height: 40em;
+        padding: 1rem;
+        align-content: flex-start;
+    }
+    .species_image{
+        width: 100%;
+        object-fit: contain;
+    }
+    .sharks_h2, .ddd{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0;
+    }
+    .ddd{
+        font-size: larger;
+    }
+
+    /* REFERENCES PAGE /////////////////////////////////////////////*/
+
+    .references_main {
+        width: 96%;
+        background-color: #476f95;
+        margin: 1% 2%;
+    }
+
+    .references_heading {
+        padding: 2% 4%;
+        color: #194a7a;
+        background-color: #d1dbe4;
+    }
+
+    .references_ul li {
+        list-style: none;
+        margin-bottom: 1%;
+        font-size: medium;
+    }
+}

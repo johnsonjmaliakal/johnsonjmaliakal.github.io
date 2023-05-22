@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Johnson M</title>
-</head>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Johnson’s Web I Web Site</title>
+	</head>
+	<body id = "body">
+		<img src = "photograph.jpg" alt = "self portrait" width = "200" height = "200"/> 
+		<!-- I wasn't able to change the size of the actual picture so I used the html attributes-->
+		<h1>Johnson’s Web I Home Page</h1>
+		<h2>Links to my Web I projects</h2>
+		<a href = '../140/project1/index.html'>project1</a><br /> 
+		<a href = '../140/project2/index.html'>project2</a><br />  
+		project3<br /> 
 
-<body>
-    <h1>Homepage</h1>
-</body>
+		<div class="first-media-query">My First Media Query</div>
+
+
+		<h2>About Me</h2>
+		<p>My name is Johnson Maliakal. I am a sophomore and I play table-tennis and badminton. I grew up in Dubai.</p> <p>I took this course in order to learn web development, be it on web browser or on mobile, as well as the intricacies behind it. </p> <h2>Some of my Favorite Web Sites:</h2>
+		<ol>
+			<li><a href = "http://endless.horse/">Endless Horse</a></li>
+			<li><a href = "http://www.koalastothemax.com/">Koalas to the Max dot Com</a></li>
+			<li><a href = "http://corndogoncorndog.com/">corn dog on corn dog</a></li>
+		</ol>
+		<h2>Exercises:</h2>
+		<ul>
+			<!--unfilled list-->
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<h2>Projects:</h2>
+		<ol>
+			<!--unfilled list-->
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+
+		<button type="button" onclick="changeBackground()">
+			Click Me to Change Color!
+		</button>
+
+		<p>
+			The above button changes the background color using JavaScript.
+		</p>
+
+		<script>
+			function changeBackground() {
+				var x = document.getElementById('body')
+				x.style.backgroundColor = "yellow";
+			}
+			
+		</script>
+	</body>
 </html>
